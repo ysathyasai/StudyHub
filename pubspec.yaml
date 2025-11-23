@@ -1,0 +1,56 @@
+name: studyhub
+description: "STUDYHUB is your ultimate all-in-one student productivity platform, blending Notion's flexibility with Google Classroom's clarity to streamline academics, boost focus, and supercharge your career prep."
+publish_to: "none"
+version: 1.0.0
+
+environment:
+  sdk: '>=2.19.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  google_fonts: ^4.0.4
+  shared_preferences: ^2.0.0  # Used for local auth storage
+  intl: ^0.17.0
+  uuid: ^4.5.1
+  qr_flutter: ^4.0.0
+  url_launcher: ^6.3.2
+  file_picker: ^10.3.3
+  image_picker: ^1.2.0
+  path_provider: ^2.1.5
+  dio: ^5.9.0
+  permission_handler: ^12.0.1
+  open_filex: ^4.5.0
+  # pdf_text disabled to resolve Android build Kotlin plugin conflict
+  # pdf_text: ^0.5.0
+  google_generative_ai: ^0.4.7
+  http: ^1.5.0
+  provider: ^6.1.5+1
+  firebase_core: ^3.8.1
+  firebase_auth: ^5.3.4
+  cloud_firestore: ^5.5.2
+  firebase_storage: ^12.3.8
+  google_sign_in: ^6.2.2
+
+dependency_overrides:
+  http: ^1.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/icons/Gemini_Generated_Image_ugb4btugb4btugb4.png
+  remove_alpha_ios: true
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: assets/icons/Gemini_Generated_Image_ugb4btugb4btugb4.png
