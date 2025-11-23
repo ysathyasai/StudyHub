@@ -1,0 +1,26 @@
+
+{
+  "firestore": {
+    "indexes": "firestore.indexes.json"
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "your-project-id",
+          "appId": "1:XXXXXXXXXXXX:android:XXXXXXXXXXXXXXXXXXXXXXXX",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "your-project-id",
+          "configurations": {
+            "android": "1:XXXXXXXXXXXX:android:XXXXXXXXXXXXXXXXXXXXXXXX",
+            "web": "1:XXXXXXXXXXXX:web:XXXXXXXXXXXXXXXXXXXXXXXX"
+          }
+        }
+      }
+    }
+  }
+}
